@@ -8,15 +8,14 @@ class App < Sinatra::Base
 
     get '/name' do
         @name = "My name is Jack."
-        # erb :'name.html.erb'
     end
 
-    get 'hometown' do
-        "My hometown is Houston."
+    get '/hometown' do
+        @hometown = "My hometown is Houston."
     end
 
-    get 'favorite-song' do
-        "My favorite song is Trapeze Swinger."
+    get '/favorite-song' do
+        @favorite_song = "My favorite song is Trapeze Swinger."
     end
 
 end
